@@ -9,8 +9,8 @@ export default function Students() {
             <h1>Students</h1>
             <Suspense fallback={<TableSkeleton />}>
                 <ul>
-                    <li><Link href="/login">Student</Link></li>
-                    <li><Link href="/login">Student</Link></li>
+                    <li><Link href="/dashboard/students/newPlan">Student1</Link></li>
+                    <li><Link href="/dashboard/students/newPlan">Student2</Link></li>
                 </ul>
             </Suspense>
         </div>
