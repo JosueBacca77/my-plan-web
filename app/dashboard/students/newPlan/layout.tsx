@@ -12,7 +12,7 @@ export default function NewPlanLayout({
       <section>
         {/* Include shared UI here e.g. a header or sidebar */}
         <nav></nav>
-        <h1>New plan</h1>
+        <h1>New plan layout</h1>
         {children}
         {newPlan}
         {plansHistory}
