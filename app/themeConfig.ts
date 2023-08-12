@@ -3,6 +3,8 @@ import { createGlobalStyle } from "styled-components"
 export const lightTheme = {
     background: '#FFF',
     text: '#333',
+    inputBorderColor: '#bdc3c7',
+    inputFocusedBorderColor: '#F4B154'
 }
 
 export const darkTheme = {}
