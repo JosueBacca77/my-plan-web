@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Card from '../components/Card/Card';
 import Input, { InputVersion } from '../components/Input/Input';
 import { useState } from 'react';
+import Button from '../components/Button/Button';
 
 
 const LoginWrapper = styled.div`
@@ -15,9 +16,9 @@ const LoginWrapper = styled.div`
 
 const LoginForm = styled.div`
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 10px
+  gap: 10px;
 `;
 
 export default function Login() {
@@ -36,7 +37,6 @@ export default function Login() {
 
   return (
     <LoginWrapper>
-      <Card>
         <LoginForm>
           <Input
             version={InputVersion.PRIMARY}
@@ -48,8 +48,11 @@ export default function Login() {
             placeholder='Contraseña'
             onChange={handleChangePassword}
           />
+          <Button
+            text='Ingresar'
+            onClick={()=>console.log('pressed')}
+          />
         </LoginForm>
-      </Card>
     </LoginWrapper>
   )
 }

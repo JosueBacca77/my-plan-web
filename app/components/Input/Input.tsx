@@ -1,4 +1,5 @@
 import Primary from "./Primary/Primary";
+import Secondary from "./Secondary/Secondary";
 
 export enum InputVersion {
     PRIMARY='primary',
@@ -26,9 +27,11 @@ export default function Input(inputProps: InputProps){
 
         case InputVersion.SECONDARY:
             return(
-                null
+                <Secondary
+                    onChange={onChange}
+                    placeholder={placeholder}
+                />
             )
-
         default:
             return(
                 <Primary 

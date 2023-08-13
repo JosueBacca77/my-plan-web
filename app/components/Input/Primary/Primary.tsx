@@ -9,15 +9,19 @@ interface PrimaryProps {
 const PrimaryInput = styled.input`
     padding: 8px;
     border-radius: 0.25rem;
+    width: 180px;
     border: 1px solid ${(props) => props.theme.inputBorderColor};
     outline: none;
     &:focus {
-        border: 2px solid ${(props) => props.theme.inputFocusedBorderColor};
+        border: 2px solid ${(props) => props.theme.pressedColor};
     }
 `;
 
 const InputWrapper = styled.div`
     height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center
 `;
 
 export default function Primary(primaryProps: PrimaryProps){
