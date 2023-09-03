@@ -1,17 +1,8 @@
-import Link from 'next/link'
+import Dashboard from '@/infraestructure/features/dashboard/Dashboard'
 
 
-export default function Page() {
+export default function PageDashboard() {
     return (
-      <div>
-      <h1>Hello, Dashboard!</h1>
-      <nav>
-        <ul>
-          <li><Link href="/dashboard/students">Students</Link></li>
-          <li><Link href="/dashboard/muscularGroups">Muscular groups</Link></li>
-          <li><Link href="/dashboard/exercises">Exersices</Link></li>
-        </ul>
-      </nav>
-      </div>
+      <Dashboard />
     )
   }

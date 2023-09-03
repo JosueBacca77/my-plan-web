@@ -1,6 +1,6 @@
 export default async function NewPlan() {
 
-    await new Promise((resolve)=> setTimeout(resolve,4000))
+    await new Promise((resolve)=> setTimeout(resolve,3000))
     
     return (
       <div>
