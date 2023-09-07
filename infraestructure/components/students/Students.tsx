@@ -1,4 +1,3 @@
-'use client'
 import TableSkeleton from '@/infraestructure/components/TableSkeleton/TableSkeleton';
 import { Suspense } from "react";
 import StudentsList from './StudentsList';

@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import {
-    EyeOutlined,
-    EyeInvisibleOutlined
-  } from '@ant-design/icons'
-
 
 interface SecondaryProps {
     placeholder: string;
@@ -63,12 +58,12 @@ export default function Secondary(secondaryProps: SecondaryProps) {
                 onChange={handleChangeText}
             />
             <EyeIconWrapper>
-            {
+            {/* {
                 showPassword ?
                 <EyeOutlined />
                 :
                 <EyeInvisibleOutlined />
-            }
+            } */}
             </EyeIconWrapper>
 
         </InputWrapper>

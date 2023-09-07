@@ -1,12 +1,16 @@
+'use client';
+import SideBar from "@/infraestructure/layout/sideBar/SideBar"
+import { DashboardContainer } from "../../infraestructure/features/dashboard/styled"
+
 export default function DashboardLayout({
     children,
   }: {
     children: React.ReactNode
   }) {
     return (
-    <div>
-        <div>SIDEBAR</div>
+    <DashboardContainer>
+        <SideBar/>
         <section>{children}</section>
-    </div>
+    </DashboardContainer>
     )
   }
